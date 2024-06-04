@@ -4,11 +4,9 @@ import transformers
 import torch
 from torch.utils.data import Dataset, DataLoader, RandomSampler, SequentialSampler
 from transformers import DistilBertTokenizer, DistilBertModel
-import import_ipynb
 import new  
 
 
-#@st.cache(allow_output_mutation=True)
 def functional_level_prediction(text):
    result = new.find_functional_label(text)
    return result
